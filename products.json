@@ -2,37 +2,31 @@
     {
         "name": "iphone 14",
         "price": 1399,
-        "feature": true,
         "company": "apple"
     },
     {
         "name": "iphone 13",
         "price": 1299,
-        "feature": true,
         "company": "apple"
     },
     {
         "name": "Note 23 Ultra",
         "price": 1199,
-        "feature": true,
         "company": "samsung"
     },
     {
         "name": "Redmi Note 12 Pro 5G",
         "price": 299,
-        "feature": true,
         "company": "MI"
     },
     {
         "name": "Note 23 Pro",
         "price": 999,
-        "feature": true,
         "company": "samsung"
     },
     {
         "name": "iphone 12",
         "price": 1099,
-        "feature": true,
         "company": "apple"
     },
     {
