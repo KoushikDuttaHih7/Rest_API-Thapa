@@ -9,6 +9,13 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Price must be provided"],
   },
+  company: {
+    type: String,
+    enum: {
+      values: ["apple", "samsung", "dell", "MI"],
+      message: `{VALUE} is not supported`,
+    },
+  },
   feature: {
     type: Boolean,
     default: false,
@@ -20,13 +27,6 @@ const productSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now(),
-  },
-  company: {
-    type: String,
-    enum: {
-      values: ["apple", "samsung", "dell", "MI"],
-      message: `{VALUE} is not supported`,
-    },
   },
 });
 
