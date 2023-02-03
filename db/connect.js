@@ -1,10 +1,8 @@
 const mongoose = require("mongoose");
 
-uri = "link";
-
 mongoose.set("strictQuery", true);
 
-const connectDB = () => {
+const connectDB = (uri) => {
   return mongoose.connect(uri);
 };
 
