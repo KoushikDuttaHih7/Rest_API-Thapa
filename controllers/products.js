@@ -39,14 +39,14 @@ const getAllProducts = async (req, res) => {
 
   console.log(queryObject);
 
-  const myData = await apiData;
-  res.status(200).json({ myData, nbHits: myData.length });
+  const Products = await apiData;
+  res.status(200).json({ Products, nbHits: Products.length });
 };
 
 const getAllProductsTesting = async (req, res) => {
-  // const myData = await Product.find(req.query).sort("-price");
-  const myData = await Product.find(req.query).select("name company");
-  res.status(200).json({ myData });
+  // const Products = await Product.find(req.query).sort("-price");
+  const Products = await Product.find(req.query).select("name company");
+  res.status(200).json({ Products });
 };
 
 module.exports = { getAllProducts, getAllProductsTesting };
